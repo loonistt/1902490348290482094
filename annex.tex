@@ -1,0 +1,78 @@
+\section*{Приложение 1} \label{application1}
+\addcontentsline{toc}{section}{Приложение 1}
+\pagestyle{empty}
+
+\setcounter{figure}{0}
+
+Полный программный код реализации волнового алгоритма:
+
+\begin{lstlisting}
+# Полный код программы (main.py)
+import pygame
+import sys
+import random
+
+# Инициализация PyGame
+pygame.init()
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+clock = pygame.time.Clock()
+
+# Цвета
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+BLUE = (0, 120, 255)
+GREEN = (52, 199, 89)
+RED = (255, 59, 48)
+GRAY = (200, 200, 200)
+YELLOW = (255, 200, 0)
+PURPLE = (175, 82, 222)
+
+# Класс Maze: генерация лабиринтов
+class Maze:
+    def __init__(self, width=21, height=15):
+        self.width = width
+        self.height = height
+        self.start = (1, 1)
+        self.end = (width - 2, height - 2)
+        self.grid = self.generate()
+    
+    def generate(self):
+        # ... (полный код класса Maze из документа)
+    
+    def update_grid_positions(self):
+        # ... (полный код метода)
+
+# Класс WaveSolver: реализация волнового алгоритма
+class WaveSolver:
+    def __init__(self, maze):
+        # ... (полный код класса WaveSolver из документа)
+    
+    def solve(self):
+        # ... (полный код метода)
+    
+    def reconstruct_path(self):
+        # ... (полный код метода)
+
+# Класс App: интерфейс и визуализация
+class App:
+    def __init__(self):
+        # ... (полный код класса App из документа)
+    
+    def handle_events(self):
+        # ... (полный код метода)
+    
+    def draw(self):
+        # ... (полный код метода)
+    
+    def update(self):
+        # ... (полный код метода)
+    
+    def run(self):
+        # ... (полный код метода)
+
+# Главная функция
+if __name__ == "__main__":
+    app = App()
+    app.run()
+\end{lstlisting}
